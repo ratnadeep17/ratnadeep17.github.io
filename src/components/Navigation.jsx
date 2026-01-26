@@ -23,6 +23,21 @@ function Navigation({ isMenuOpen, setIsMenuOpen }) {
           </button>
         </div>
       </div>
+      
+      {/* Mobile menu */}
+      {isMenuOpen && (
+        <div className="md:hidden bg-black/90 backdrop-blur-md">
+          <div className="px-2 pt-2 pb-3 space-y-1">
+            <a href="#home" className="block px-3 py-2 text-white hover:bg-white/10 rounded-md transition" onClick={() => setIsMenuOpen(false)}>Home</a>
+            <a href="#about" className="block px-3 py-2 text-white hover:bg-white/10 rounded-md transition" onClick={() => setIsMenuOpen(false)}>About</a>
+            <a href="#experience" className="block px-3 py-2 text-white hover:bg-white/10 rounded-md transition" onClick={() => setIsMenuOpen(false)}>Experience</a>
+            <a href="#projects" className="block px-3 py-2 text-white hover:bg-white/10 rounded-md transition" onClick={() => setIsMenuOpen(false)}>Projects</a>
+            <a href="#skills" className="block px-3 py-2 text-white hover:bg-white/10 rounded-md transition" onClick={() => setIsMenuOpen(false)}>Skills</a>
+            <a href="#education" className="block px-3 py-2 text-white hover:bg-white/10 rounded-md transition" onClick={() => setIsMenuOpen(false)}>Education</a>
+            <a href="#contact" className="block px-3 py-2 text-white hover:bg-white/10 rounded-md transition" onClick={() => setIsMenuOpen(false)}>Contact</a>
+          </div>
+        </div>
+      )}
     </nav>
   )
 }
