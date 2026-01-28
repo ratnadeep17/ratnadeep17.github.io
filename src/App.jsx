@@ -8,6 +8,7 @@ import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Education from './components/Education'
 import Contact from './components/Contact'
+import reactLogo from './assets/react.svg'
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -21,8 +22,7 @@ function App() {
       <Projects />
       <Skills />
       <Education />
-      <Contact />
-    </div>
+      <Contact />    </div>
   )
 }
 
